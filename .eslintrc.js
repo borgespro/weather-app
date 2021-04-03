@@ -14,7 +14,15 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    'max-len': [
+      'error',
+      {
+        ignoreComments: true,
+        code: 120,
+      },
+    ],
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
+    'no-use-before-define': 'off',
   },
 };
