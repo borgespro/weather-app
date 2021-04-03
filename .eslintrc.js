@@ -13,5 +13,8 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
-  rules: {},
+  rules: {
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
+  },
 };
