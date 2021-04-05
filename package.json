@@ -57,7 +57,10 @@
     ]
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "<rootDir>/.ci/setupTests.js"
+    ]
   },
   "private": true
 }
