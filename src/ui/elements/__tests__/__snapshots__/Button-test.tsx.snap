@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Element should render without issues 1`] = `
+<Styled(Component)
+  active={false}
+  onPress={[MockFunction]}
+>
+  <Styled(Text)
+    active={false}
+  >
+    Test
+  </Styled(Text)>
+</Styled(Component)>
+`;

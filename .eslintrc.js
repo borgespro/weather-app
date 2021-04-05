@@ -50,6 +50,7 @@ module.exports = {
       },
     ],
     'global-require': 'off',
+    'no-console': 'off',
   },
   settings: {
     'import/parsers': {

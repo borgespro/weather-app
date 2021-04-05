@@ -1,10 +1,16 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 
-export default function Footer() {
+import Button from '@/ui/elements/Button';
+
+import { FooterContainer, FooterContent } from './Footer.styled';
+
+export default function Footer(): React.ReactElement {
   return (
-    <View>
-      <Text>Footer</Text>
-    </View>
+    <FooterContainer testID="footerContainer">
+      <FooterContent>
+        <Button label="Light" onPress={() => console.log('Light')} />
+        <Button label="Dark" onPress={() => console.log('Dark')} active />
+      </FooterContent>
+    </FooterContainer>
   );
 }

@@ -6,7 +6,13 @@ const colors = {
     text: '#6c7476',
     title: '#ffffff',
   },
-  light: {},
+  light: {
+    background: '#6c7476',
+    primary: '#6c7476',
+    secondary: '#272c2f',
+    text: '#272c2f',
+    title: '#ffffff',
+  },
 };
 
 export default colors;
