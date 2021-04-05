@@ -8,11 +8,12 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
+      tsx: true,
     },
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'eslint-plugin-import-helpers'],
   rules: {
     'max-len': [
       'error',
@@ -26,5 +27,44 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/ban-types': 'off',
+    'import-helpers/order-imports': [
+      'warn',
+      {
+        newlinesBetween: 'always',
+        groups: [
+          '/^react/',
+          'module',
+          '/^@/assets/',
+          '/^@/store/',
+          '/^@/typing/',
+          '/^@/routes/',
+          '/^@/ui/',
+          'absolute',
+          ['parent', 'sibling', 'index'],
+        ],
+        alphabetize: {
+          order: 'asc',
+          ignoreCase: true,
+        },
+      },
+    ],
+  },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      'eslint-import-resolver-custom-alias': {
+        alias: {
+          '@/assets': './src/assets',
+          '@/config': './src/config',
+          '@/routes': './src/routes',
+          '@/store': './src/store',
+          '@/typings': './src/typings',
+          '@/ui': './src/ui',
+        },
+        extensions: ['.ts', '.tsx'],
+      },
+    },
   },
 };

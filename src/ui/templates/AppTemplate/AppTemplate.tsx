@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 
-import Header from '../../sections/Header';
-import Footer from '../../sections/Footer';
+import Footer from '@/ui/sections/Footer';
+import Header from '@/ui/sections/Header';
 
 import { Content, Wrapper } from './AppTemplate.styled';
 
