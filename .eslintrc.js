@@ -25,6 +25,7 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'no-use-before-define': 'off',
+    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/ban-types': 'off',
     'import-helpers/order-imports': [
@@ -48,6 +49,7 @@ module.exports = {
         },
       },
     ],
+    'global-require': 'off',
   },
   settings: {
     'import/parsers': {

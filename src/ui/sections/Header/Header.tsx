@@ -1,10 +1,16 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 
-export default function Header() {
+import SunIcon from '@/ui/elements/SunIcon';
+
+import { AppTitle, HeaderContainer, HeaderContent } from './Header.styled';
+
+export default function Header(): React.ReactElement {
   return (
-    <View>
-      <Text>Weather App</Text>
-    </View>
+    <HeaderContainer testID="headerContainer">
+      <HeaderContent>
+        <SunIcon />
+        <AppTitle>WeatherApp</AppTitle>
+      </HeaderContent>
+    </HeaderContainer>
   );
 }

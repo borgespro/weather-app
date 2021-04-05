@@ -1,4 +1,3 @@
-import ContainerTemplate, { ContainerTemplateProps } from './AppTemplate';
+import ContainerTemplate from './AppTemplate';
 
-export { ContainerTemplateProps };
 export default ContainerTemplate;

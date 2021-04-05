@@ -1,4 +1,5 @@
 import React, { PropsWithChildren } from 'react';
+import { StatusBar } from 'react-native';
 
 import Footer from '@/ui/sections/Footer';
 import Header from '@/ui/sections/Header';
@@ -13,6 +14,7 @@ export default function AppTemplate({ children }: PropsWithChildren<AppTemplateP
       <Header />
       <Content>{children}</Content>
       <Footer />
+      <StatusBar />
     </Wrapper>
   );
 }

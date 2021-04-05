@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SunIcon Element should render without issues 1`] = `
+<Styled(View)>
+  <Styled(Image)
+    source={
+      Object {
+        "testUri": "../../../src/assets/sun.png",
+      }
+    }
+  />
+</Styled(View)>
+`;
