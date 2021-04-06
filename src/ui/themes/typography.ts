@@ -5,6 +5,13 @@ export const sizes = {
   l: '18px',
   xl: '20px',
   xxl: '24px',
+  xxxl: '120px',
 };
 
-export const fonts = {};
+export const fonts = {
+  montserrat: {
+    bold: 'Montserrat700Bold',
+    semiBold: 'Montserrat600SemiBold',
+    medium: 'Montserrat500Medium',
+  },
+};
