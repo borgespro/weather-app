@@ -1,14 +1,21 @@
 import React from 'react';
 
-import { ThemeProvider, DefaultTheme } from 'styled-components/native';
+import { ThemeProvider } from 'styled-components/native';
+
+import { ThemeSetupConsumer, ThemeSetupProvider } from '@/contexts/ThemeSetupContext';
 
 import InfoDisplay from '@/ui/screens/InfoDisplay';
-import { darkTheme } from '@/ui/themes';
 
 export default function AppConfig(): React.ReactElement {
   return (
-    <ThemeProvider theme={darkTheme as DefaultTheme}>
-      <InfoDisplay />
-    </ThemeProvider>
+    <ThemeSetupProvider>
+      <ThemeSetupConsumer>
+        {({ currentTheme }) => (
+          <ThemeProvider theme={currentTheme}>
+            <InfoDisplay />
+          </ThemeProvider>
+        )}
+      </ThemeSetupConsumer>
+    </ThemeSetupProvider>
   );
 }

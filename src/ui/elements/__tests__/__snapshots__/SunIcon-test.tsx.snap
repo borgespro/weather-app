@@ -3,11 +3,7 @@
 exports[`SunIcon Element should render without issues 1`] = `
 <Styled(View)>
   <Styled(Image)
-    source={
-      Object {
-        "testUri": "../../../src/assets/sun.png",
-      }
-    }
+    source={1}
   />
 </Styled(View)>
 `;

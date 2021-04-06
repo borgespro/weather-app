@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Element should render without issues 1`] = `
+<Styled(View)
+  testID="footerContainer"
+>
+  <ThemeToggle />
+</Styled(View)>
+`;
